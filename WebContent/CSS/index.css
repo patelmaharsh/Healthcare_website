@@ -1,0 +1,84 @@
+#topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#topnav a#active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+		body{
+			 margin: 0;
+  			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		#div1{
+			background-image: url(image/img4.jpg);
+			width: 100%;
+			background-attachment: fixed;
+			 background-repeat: no-repeat;
+			height: 750px;
+		}
+		#divscrl{
+			margin: 300px 0px 0px 0px;
+			text-align: center;
+		}
+		.div2{
+			width: 100%;
+			background-color: white;
+			height: 400px;
+			margin: 0px 0px 0px 0px;
+		}
+		.div3{
+			text-align: center;
+		}
+		#divimg{
+			width: 100%;
+			height: 750px;
+			background-image: url(image/img7.jpg);
+			background-attachment: fixed;
+			 background-repeat: no-repeat;
+		}
+		#divimg2{
+			width: 100%;
+			height: 750px;
+			background-image: url(image/img9.jpg);
+			background-attachment: fixed;
+			 background-repeat: no-repeat;	
+		}
+		#divimg3{
+			width: 100%;
+			height: 750px;
+			background-image: url(image/img7.jpg);
+			background-attachment: fixed;
+			 background-repeat: no-repeat;	
+		}
+		
+		#div4{
+			width: 100%;
+			background-color: white;
+			height: 400px;
+		}
+		.div6{
+			height: 95px;
+		}
+		#divtop{
+			height: 20px;
+		}
+		#divbot{
+			height: 60px;
+			background-color: #333;
+  			text-align: center;
+		}
