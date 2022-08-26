@@ -1,10 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app>
-	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
-		<welcome-file>default.html</welcome-file>
-		<welcome-file>index.html</welcome-file>
-	</welcome-file-list>
-</web-app> 
-
- 
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <!-- <servlet>
+  	<servlet-name>addTwoNumbers</servlet-name>
+  	<servlet-class>com.pmaharsh.onlineDoctorAppointmentSystem.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addTwoNumbers</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>squareNumber</servlet-name>
+  	<servlet-class>com.pmaharsh.onlineDoctorAppointmentSystem.SqServlet</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Maharsh</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>squareNumber</servlet-name>
+  	<url-pattern>/sq</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>myServlet</servlet-name>
+  	<servlet-class>com.pmaharsh.onlineDoctorAppointmentSystem.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>myServlet</servlet-name>
+  	<url-pattern>/myservlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addUser</servlet-name>
+  	<servlet-class>com.pmaharsh.onlineDoctorAppointmentSystem.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addUser</servlet-name>
+  	<url-pattern>/addUser</url-pattern>
+  </servlet-mapping> -->
+  
+  <context-param>
+  	<param-name>hospitalName</param-name>
+  	<param-value>Shivam Ano Care</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>jdbcUrl</param-name>
+  	<param-value>jdbc:mysql://localhost:3306/onlinehospitalappointment</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>jdbcUsername</param-name>
+  	<param-value>root</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>jdbcPassword</param-name>
+  	<param-value>mysql</param-value>
+  </context-param>
+  
+</web-app>
