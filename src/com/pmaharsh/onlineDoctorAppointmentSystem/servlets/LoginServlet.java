@@ -18,6 +18,7 @@ import com.pmaharsh.onlineDoctorAppointmentSystem.service.AuthenticationService;
 public class LoginServlet extends HttpServlet{
 	@Override
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		AuthenticationService authService = new AuthenticationService();
@@ -29,10 +30,14 @@ public class LoginServlet extends HttpServlet{
 				session.setAttribute("loginUser", u);
 				res.sendRedirect("welcome.jsp");
 			} else {
+				HttpSession session = req.getSession();
+				session.setAttribute("error", "invalid credentials");
 				System.out.println("invalid credentials");
 				res.sendRedirect("index.jsp");
 			}
 		} catch (NoSuchAlgorithmException e) {
+			HttpSession session = req.getSession();
+			session.setAttribute("error", "exception while converting password hashing");
 			System.out.println("exception while converting password hashing");
 			e.printStackTrace();
 		}

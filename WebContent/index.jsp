@@ -17,6 +17,7 @@
 	<div>
 		<jsp:include page="commonHeader.jsp" />
 	</div>
+	<jsp:include page="errorMessages.jsp" />
 	<div>
 		<div class="container  mt-4 shadow-lg p-4 mb-5 bg-white rounded">
 			<div class="row">
