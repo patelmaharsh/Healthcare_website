@@ -1,0 +1,3 @@
+create table user(username varchar(255),name varchar(255),password varchar(255),age int,email varchar(255),phone varchar(255),address varchar(255),city varchar(255));
+create table doctor(username varchar(255),name varchar(255),password varchar(255),age int,email varchar(255),phone varchar(255),city varchar(255),location varchar(255),category varchar(255),gender varchar(255));
+create table appointment(id int,category varchar(255),status int,date varchar(255),username varchar(255),doctorUsername varchar(255));
